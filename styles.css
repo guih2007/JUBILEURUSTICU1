@@ -35,4 +35,10 @@
 }
 #resultado{
     background-color: white;
+    width: 400px;
+    height: 30px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: right;
+    padding: 5px;
 }
