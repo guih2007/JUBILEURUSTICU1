@@ -13,41 +13,45 @@
             <h1>Criado por G.Pereira10</h1>
             <div class="Calculadora">
                 <h1>Calculadora</h1>
-                <p id="resultado">resultado</p>
+                <p id="resultado"></p>
                 <table>
                     <tr>
                         <td><button class="botao">C</button></td>
                         <td><button class="botao"><</button></td>
-                        <td><button class="botao">/</button></td>
-                        <td><button class="botao">X</button></td>
+                        <td><button class="botao" onclick="insert ('/')"></button></td>
+                        <td><button class="botao" onclick="insert ('*')"></button></td>
                     </tr>
                     <tr>
-                        <td><button class="botao">7</button></td>
-                        <td><button class="botao">8</button></td>
-                        <td><button class="botao">9</button></td>
-                        <td><button class="botao">-</button></td>
+                        <td><button class="botao" onclick="insert ('7')"></button>>7</button></td>
+                        <td><button class="botao" oncllick="insert ('8')"></button>>8</button></td>
+                        <td><button class="botao" oncllick="insert ('9')"></button>>9</button></td>
+                        <td><button class="botao" oncllick="insert ('-')"></button>>-</button></td>
                     </tr>
                     <tr>
-                        <td><button class="botao">4</button></td>
-                        <td><button class="botao">5</button></td>
-                        <td><button class="botao">6</button></td>
-                        <td><button class="botao">+</button></td>
+                        <td><button class="botao" oncllick="insert ('4')"></button>>4</button></td>
+                        <td><button class="botao" oncllick="insert ('5')"></button>>5</button></td>
+                        <td><button class="botao" oncllick="insert ('6')"></button>>6</button></td>
+                        <td><button class="botao" oncllick="insert ('+')"></button>>+</button></td>
                     </tr>
                     <tr>
-                        <td><button class="botao">1</button></td>
-                        <td><button class="botao">2</button></td>
-                        <td><button class="botao">3</button></td>
+                        <td><button class="botao" oncllick="insert ('1')"></button>>1</button></td>
+                        <td><button class="botao" oncllick="insert ('2')"></button>>2</button></td>
+                        <td><button class="botao" oncllick="insert ('3')"></button>>3</button></td>
                         <td rowspan="2"><button class="botao" style="height: 106px;">=</button></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><button class="botao" style="width: 106px;">0</button></td>
-                        <td><button class="botao">.</button></td>
+                        <td colspan="2"><button class="botao" style="width: 106px;" oncllick="insert ('0')"></button>>0</button></td>
+                        <td><button class="botao" oncllick="insert ('.')"></button>>.</button></td>
                     </tr>
                 </table>
             </div>
         </div>
         <script>
-            
+        function insert (num) 
+        {
+            var numero= document.getElementById ('resultado').innerHTML;
+            document.getElementBYId ('resultado').innerHTML = numero+num;
+        }   
         </script>
     </body>
 </html>
